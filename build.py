@@ -20,7 +20,7 @@ import re
 import shutil
 
 ROOT = pathlib.Path(__file__).parent
-PUBLIC_FILES = ['styles.css', 'script.js', 'favicon.ico', 'favicon-32.png', 'apple-touch-icon.png', 'robots.txt', 'sitemap.xml', '_headers', '_redirects']
+PUBLIC_FILES = ['styles.css', 'script.js', 'favicon.ico', 'favicon-32.png', 'apple-touch-icon.png', 'robots.txt', 'sitemap.xml', '_headers', '_redirects', '.htaccess']
 PUBLIC_DIRS = ['assets', '.well-known']
 SRC = ROOT / 'src'
 SITE = 'https://babalamani.com'  # the live domain

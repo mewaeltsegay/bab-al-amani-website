@@ -1,0 +1,29 @@
+# Apache configuration. Netlify / Cloudflare Pages use _headers instead.
+
+ErrorDocument 404 /404.html
+
+# Force HTTPS
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; frame-src https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=(), browsing-topics=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  <FilesMatch "\.(woff2|jpg|svg)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# Don't serve source and build files
+<FilesMatch "^(build\.py|README\.md)$">
+  Require all denied
+</FilesMatch>
+RedirectMatch 404 ^/(src|_handoff|\.claude)(/|$)

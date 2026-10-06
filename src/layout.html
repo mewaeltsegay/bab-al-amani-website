@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="#0E3B34">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bab Al Amani General Trading">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{site}}/assets/img/port-sunset.jpg">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/schibsted-grotesk-latin-5.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="styles.css?v={{v:styles.css}}">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html" aria-label="Bab Al Amani General Trading, home">
+      {{mark}}
+      <span class="wm"><span class="wm-pre">bab al</span> amani</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav-links" id="nav-links" aria-label="Main">
+      <a href="what-we-trade.html"{{cur:trade}}>What we trade</a>
+      <a href="markets.html"{{cur:markets}}>Markets</a>
+      <a href="tenders.html"{{cur:tenders}}>Tenders</a>
+      <a href="about.html"{{cur:about}}>About</a>
+      <a href="faq.html"{{cur:faq}}>FAQ</a>
+      <a class="btn btn-primary btn-sm" href="contact.html"{{cur:contact}}>Request a quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{content}}
+</main>
+
+<footer class="site-footer">
+  <div class="footer-stripe"><div></div><div></div></div>
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="index.html" aria-label="Bab Al Amani General Trading, home">
+        {{mark-light}}
+        <span class="lockup"><span class="wm"><span class="wm-pre">bab al</span> amani</span><span class="sub">General Trading</span></span>
+      </a>
+      <p>Steady trade. Growing hope.</p>
+    </div>
+    <div class="footer-col">
+      <h2 class="h4">Company</h2>
+      <ul>
+        <li><a href="what-we-trade.html">What we trade</a></li>
+        <li><a href="markets.html">Markets</a></li>
+        <li><a href="tenders.html">Tenders</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="h4">Contact</h2>
+      <ul>
+        <li>Office: <a href="tel:+97145845996">+971 4 584 5996</a></li>
+        <li>Mobile: <a href="tel:+971582156089">+971 58 215 6089</a></li>
+        <li><a href="https://wa.me/971582156089" target="_blank" rel="noopener">WhatsApp us</a></li>
+        <li><a href="mailto:contact@babalamani.com">contact@babalamani.com</a></li>
+        <li><a href="contact.html#visit">Office 541 D, Al Ghurair Centre<br>Al Rigga Road, Deira, Dubai</a></li>
+        <li><a href="contact.html">Request a quote</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="h4">Legal</h2>
+      <ul>
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="cookies.html">Cookie policy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© {{year}} Bab Al Amani General Trading LLC · Trade licence no. 1250434, Dubai</span>
+    <span>No cookies. No tracking. Fonts and photos served from this site.</span>
+  </div>
+</footer>
+
+<script src="script.js?v={{v:script.js}}"></script>
+</body>
+</html>

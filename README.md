@@ -40,3 +40,9 @@ Deploying with any other branch name creates a preview URL instead of updating t
 ## Keeping it cookie-free
 
 The cookie policy says the site sets no cookies and loads nothing from other servers. If you add analytics, maps, YouTube, chat widgets or Google Fonts links, that stops being true: you'd need a consent banner and an updated cookie policy first.
+
+## Licences
+
+- **Fonts:** Schibsted Grotesk, Instrument Sans and JetBrains Mono, under the SIL Open Font License 1.1. The licence texts are in `assets/fonts/OFL-*.txt`.
+- **Photos:** most are from [Unsplash](https://unsplash.com) and used under the Unsplash licence. `assets/img/food-wholesale.jpg` was supplied by the site owner.
+- **Logo, text and design:** © Bab Al Amani General Trading LLC. All rights reserved. They aren't open for reuse.
